@@ -1,2 +1,9 @@
 # Partial-Dependent-Plots-Individual-Conditional-Expectation-Plots-With-SHAP
-Individual Conditional Expectation (ICE) plots display one line per instance that shows how the instance's prediction changes when a feature changes. The Partial Dependence Plot (PDP) for the average effect of a feature is a global method because it does not focus on specific instances, but on an overall average.
+
+1. Modeling
+Training an advanced Gradient Boosting (XGBoost) Regression model Evaluate the model on the Validation Root Mean Squared Error metric.
+
+2. SHAP Values
+Creatjng a shap explainer from gradient boosting model
+Explaining individual train (or test) data points on their contribution to the outcome.
+The visualization shows features each contributing to push the model output from the base value (the average model output over the training dataset we passed) to the model output. Features pushing the prediction higher are shown in red, those pushing the prediction lower are in blue.
